@@ -29,15 +29,14 @@ def after(again = 2):
 
         def choes():
             #en
-            enter = input("en or de? ")
+            enter = input("encript/en or decript/de ? ")
             data1 = input('data ? ')
             step2 = int(input("step ? "))
-            print(enter)
             if enter == "en":
-                print(encript(data1 , step2))
+                print(f"This is encript data : {encript(data1 , step2)}")
             #de
             elif enter == "de":
-                print(decript(data1 , step2))
+                print(f"This is decript data : {decript(data1 , step2)}")
                 
 
         choes()
