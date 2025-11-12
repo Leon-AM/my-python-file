@@ -1,1 +1,1 @@
-Hello, welcom to my Git Hub, This is my python projrct
+Hello, welcom to my Git Hub, This is my python project
