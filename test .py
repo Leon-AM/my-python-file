@@ -309,14 +309,17 @@ qr.add_data(url)
 
 img = qr.make_image()
 img.save(file_paht)
+
 print("QR code was generated")
 '''
 
 
 
+'''
 import emoji
 
 print(emoji.emojize('Python is :thumbs_up: \n'))
 print(emoji.demojize("what is name emoji ?  👍 , ❤️ \n"))
 print(emoji.emojize("python is fun :red_heart: \n"))
 print(emoji.is_emoji("👍"))
+'''
