@@ -323,3 +323,33 @@ print(emoji.demojize("what is name emoji ?  👍 , ❤️ \n"))
 print(emoji.emojize("python is fun :red_heart: \n"))
 print(emoji.is_emoji("👍"))
 '''
+
+
+'''
+from tqdm import tqdm
+from time import sleep
+
+for i in tqdm(range(100)):
+    sleep(0.1)
+'''
+
+
+from turtle import *
+import colorsys
+
+speed(0)
+bgcolor("black")
+
+h = 0
+for i in range(16):
+    for j in range(18):
+        c = colorsys.hsv_to_rgb(h,1,1)
+        color(c)
+        h += 0.005
+        rt(90)
+        circle(150 - j * 6, 90)
+        lt(90)
+        circle(150 - j * 6, 90)
+        rt(180)
+    circle(10 , 24)
+done()
