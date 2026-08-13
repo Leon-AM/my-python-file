@@ -1,20 +1,22 @@
 
 import random
-hads = random.randint(1,100)
+secret_number = random.randint(1,100)
 count = 0
+print("Guess the number between 1 and 100!")
+
 while True:
 
 
-    ent1 = int(input("num?"))
+    guess = int(input("your guess: "))
+    count += 1
 
-    if ent1 > hads :
-        print("smaler")
-        count += 1
-    elif ent1 < hads :
-        print("larger")
-        count += 1
-    elif ent1 == hads:
-        print("good job")
-        count += 1
+    if guess > secret_number :
+        print("Smaller!")
+    
+    elif guess < secret_number :
+        print("Lager!")
+        
+    elif guess == secret_number:
+        print("Correct! :]")
+        print(f"You guessed it in {count} attempts.")
         break
-print (f"your try : {count}")
