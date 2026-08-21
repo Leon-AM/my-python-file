@@ -32,19 +32,22 @@ def operacion(choice , num1 , num2):
 
 
 while True:
-    
     menu()
-    choice = int(input("choice? "))
+    try:    
+        choice = int(input("choice? "))
+    except ValueError:
+        print("your choice isn't int!")
+        continue
     while choice >7:
         print("bog")
         choice = int(input("choice? "))
-        
+            
     if choice ==7:
         break
     else:
         num1 = float(input("num1 ?"))
         num2 = float(input("num2 ?"))
-    
+        
     result = operacion(choice , num1 , num2)
     print(f"\n Result: {result}")
 
